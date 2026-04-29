@@ -5,21 +5,21 @@
 class Aix < Formula
   desc "CLI to switch Anthropic-compatible endpoints and tokens"
   homepage "https://github.com/h4ck4life/aix-go"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/h4ck4life/aix-go/releases/download/v1.0.3/aix_1.0.3_darwin_amd64.tar.gz"
-      sha256 "74bde1f86573e3f6fe1c10787d34dbdc2992ebe749b3d74a357f2a3155906d28"
+      url "https://github.com/h4ck4life/aix-go/releases/download/v1.0.4/aix_1.0.4_darwin_amd64.tar.gz"
+      sha256 "ad58b21ef0ec17db53be1d8233a9f8b8adb0bb0703118f9fe4a0a8ed95404d99"
 
       define_method(:install) do
         bin.install "aix"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/h4ck4life/aix-go/releases/download/v1.0.3/aix_1.0.3_darwin_arm64.tar.gz"
-      sha256 "b178e1e35189c8d5cdcaa9d1ac8f4b534dcd5774835285b6fe982c979f65c83b"
+      url "https://github.com/h4ck4life/aix-go/releases/download/v1.0.4/aix_1.0.4_darwin_arm64.tar.gz"
+      sha256 "e8aa9be7b31d65e956f73ca6f0226eac08777bce6873415c128a2f520feebd12"
 
       define_method(:install) do
         bin.install "aix"
@@ -29,15 +29,15 @@ class Aix < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/h4ck4life/aix-go/releases/download/v1.0.3/aix_1.0.3_linux_amd64.tar.gz"
-      sha256 "886272f58899a6811d6a462ad62a948b890b32a5485e359e6e4514f0b2ed82e2"
+      url "https://github.com/h4ck4life/aix-go/releases/download/v1.0.4/aix_1.0.4_linux_amd64.tar.gz"
+      sha256 "f7fb1b53fbc29d0c9f37f43d89dfce9108d7cdc480de850cc6220aaf17128e8d"
       define_method(:install) do
         bin.install "aix"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/h4ck4life/aix-go/releases/download/v1.0.3/aix_1.0.3_linux_arm64.tar.gz"
-      sha256 "035f1d695f6b3eca9986f7f942df200a831d64506e8548f10981e8e33f54953f"
+      url "https://github.com/h4ck4life/aix-go/releases/download/v1.0.4/aix_1.0.4_linux_arm64.tar.gz"
+      sha256 "57efa24666eea8d1f5e76014631ea969bdfe6ea815f9f6127cd983d0b1e19705"
       define_method(:install) do
         bin.install "aix"
       end
